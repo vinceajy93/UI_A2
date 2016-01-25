@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LevelController : MonoBehaviour {
-
-	public Button button;
 
 	// Use this for initialization
 	void Start () {
@@ -18,35 +17,74 @@ public class LevelController : MonoBehaviour {
 
 	//calling the main menu scene
 	public void loadMainMenu(){
-		Application.LoadLevel ("Main Menu Page");
+		SceneManager.LoadScene("Main Menu Page");
+		Debug.Log ("main menu pressed");
 	}
 
 	//calling the tutorial scene
 	public void loadTutorial(){
-		Application.LoadLevel ("");
+		SceneManager.LoadScene("Tutorial Page");
+		Debug.Log ("tutorial pressed");
 	}
 
 	//calling the Options scene
 	public void loadOptions(){
-		Application.LoadLevel ("");
+		SceneManager.LoadScene("Options Page");
+		Debug.Log ("options pressed");
 	}
 
 	//calling the campaign scene
 	public void loadCampaign(){
-		Application.LoadLevel ("");
+		SceneManager.LoadScene(""); //<------- need to update when scene is ready
+		Debug.Log ("campaign pressed");
 	}
 
 	//calling the versus scene
 	public void loadVersus(){
-		Application.LoadLevel ("");
+		SceneManager.LoadScene(""); //<------- need to update when scene is ready
+		Debug.Log ("versus pressed");
 	}
 
 	//calling the weapons selection scene
 	public void loadWeaponSelect(){
-		Application.LoadLevel ("");
+		SceneManager.LoadScene(""); //<------- need to update when scene is ready
+		Debug.Log ("weapons selection pressed");
 	}
+
+	//calling the lose page scene
+	public void loadLosePage(){
+		SceneManager.LoadScene("");
+		Debug.Log ("lose page");
+	}
+
+	//calling the win page scene
+	public void loadWinPage(){
+		SceneManager.LoadScene("");
+		Debug.Log ("win page");
+	}
+
+	//calling the Achievemment page
+	public void loadAchievementsPage(){
+		SceneManager.LoadScene("");
+		Debug.Log ("achievements page");
+	}
+
+	//calling the facebook page
+	public void loadFacebookPage(){
+		SceneManager.LoadScene("");
+		Debug.Log ("quit pressed");
+	}
+
+	//calling the twitter page
+	public void loadTwitterPage(){
+		SceneManager.LoadScene("");
+		Debug.Log ("quit pressed");
+	}
+
 	//quiting the game (exit button is pressed)
 	public void Exit(){
 		Application.Quit ();
+		Debug.Log ("quit pressed");
 	}
+		
 }
