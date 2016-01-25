@@ -28,10 +28,10 @@ public class AdjustVolume : MonoBehaviour {
 
 
 		if (toggle == false) {
-			mainBGM.Pause ();
+			mainBGM.mute = true;
 			debugPrint.text = ("bool: false");
 		} else {
-			mainBGM.Play();
+			mainBGM.mute = false;
 			debugPrint.text = ("bool: true");
 		}
 	}
