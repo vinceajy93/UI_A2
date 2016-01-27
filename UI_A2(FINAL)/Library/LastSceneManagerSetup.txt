@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Twitter Page.unity
-  isLoaded: 1
-  isActive: 1
