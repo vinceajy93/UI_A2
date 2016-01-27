@@ -3,10 +3,11 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class LevelController : MonoBehaviour {
+	//public bool mybool;
 
 	// Use this for initialization
 	void Start () {
-	
+		//mybool = game.achivement;
 	}
 	
 	// Update is called once per frame

@@ -12,7 +12,6 @@ public class AdjustVolume : MonoBehaviour {
 	public GameObject mainsoundObject;
 	public GameObject sfxSoundObject;
 	public GameObject globalvar;
-
 	// Use this for initialization
 	void Awake () {
 		DontDestroyOnLoad (this);			
@@ -21,8 +20,6 @@ public class AdjustVolume : MonoBehaviour {
 	void Start()
 	{
 		globalvar = GameObject.FindGameObjectWithTag ("global_var");
-
-
 
 		mainsoundObject = GameObject.FindGameObjectWithTag ("mainBGM");
 
